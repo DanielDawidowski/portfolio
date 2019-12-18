@@ -113,12 +113,10 @@ header .row .menu-icons img {
 
 
 header {
+    height: 60px;
     background-color: var(--primaryColor);
 }
-main {
-  margin: 1rem;
 
-}
 nav ul {
     list-style: none;
     margin: 0;

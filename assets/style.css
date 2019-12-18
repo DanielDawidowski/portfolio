@@ -18,18 +18,87 @@
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Montserrat";
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-weight: lighter;
     font-family: "Paytone One";
 }
 
+p {
+    line-height: 30px;
+}
+
+button {
+    padding: 8px;
+    width: 160px;
+    height: 48px;
+    color: var(--white);
+    background-color: var(--primaryColor);
+    border: 1px solid var(--white);
+    border-radius: 13px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+
+/*/////////////////// GLOBAL ///////////////////*/
+
+/*/////////////////// HERO /////////////////////*/
 
 #hero {
+    height: calc(100vh - 60px);
     background-color: var(--primaryColor);
+    padding: 1rem;
+    background: url("./img/hero/hero-small.png") no-repeat;
+    background-position: bottom 10%;
+    background-size: cover;
+    display: flex;
+    align-items: flex-start;
 }
+
+#hero .hero-text > * {
+    margin-top: 1rem;
+}
+
+#hero .hero-text {
+    color: var(--white);
+}
+
+#hero .hero-text h1{
+    font-size: 56px;
+}
+
+#hero .hero-text .hero-buttons {
+    display: flex;
+    justify-content: flex-start
+}
+
+.hero-buttons .about-btn {
+    background-color: var(--yellow);
+    color: var(--black);
+    margin-right: 20px;
+}
+
+@media (min-width: 800px) {
+    #hero  {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 3rem;
+    }
+    #hero .hero-text {
+        width: 600px;
+    }
+    
+}
+
+/*/////////////////// HERO /////////////////////*/
