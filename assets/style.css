@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Paytone+One&display=swap');
+
+:root {
+    --primaryColor: #583EBC;
+    --white: #FFFFFF;
+    --black: #333333;
+    --yellow: #F8F7AB;
+    --grey: #F7F7F7;
+
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Paytone One";
+}
+
+
+#hero {
+    background-color: var(--primaryColor);
+}
