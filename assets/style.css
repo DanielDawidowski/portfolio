@@ -5,8 +5,7 @@
     --white: #FFFFFF;
     --black: #333333;
     --yellow: #F8F7AB;
-    --grey: #F7F7F7;
-
+    --grey: rgb(231, 231, 231);
 }
 
 *::before, *::after {
@@ -27,13 +26,21 @@ body {
     font-family: "Montserrat";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-weight: lighter;
     font-family: "Paytone One";
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 p {
     line-height: 30px;
+}
+
+li {
+    list-style: none;
 }
 
 button {
@@ -59,10 +66,10 @@ button {
     background-color: var(--primaryColor);
     padding: 1rem;
     background: url("./img/hero/hero-small.png") no-repeat;
-    background-position: bottom 10%;
     background-size: cover;
     display: flex;
     align-items: flex-start;
+    border-radius: 0 0 100px 100px;
 }
 
 #hero .hero-text > * {
@@ -70,7 +77,16 @@ button {
 }
 
 #hero .hero-text {
+    position: relative;
     color: var(--white);
+}
+
+#hero .hero-text::before {
+    position: absolute;
+    content: url("./img/hero/Combined\ Shape.svg");
+    right: -2rem;
+    opacity: 0.4;
+    overflow-x: hidden;
 }
 
 #hero .hero-text h1{
@@ -95,6 +111,7 @@ button {
         align-items: center;
         padding: 3rem;
     }
+
     #hero .hero-text {
         width: 600px;
     }
@@ -102,3 +119,536 @@ button {
 }
 
 /*/////////////////// HERO /////////////////////*/
+
+/*/////////////////// TECH /////////////////////*/
+
+#tech {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+#tech .tech-text > * {
+    margin-bottom: 2rem;
+}
+
+#tech .tech-text .tech-title > * {
+    margin-bottom: 1rem;
+}
+
+#tech .tech-text .tech-title h2 {
+    font-weight: lighter;
+}
+
+#tech .tech-text .tech-title h1 {
+    font-size: 40px;
+}
+
+#tech .tech-cards {
+    display: grid;
+}
+
+#tech .tech-cards .tech-card > * {
+    padding: 20px;
+}
+
+#tech .tech-cards .tech-card {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: var(--grey);
+    border-radius: 15px;
+}
+
+#tech .tech-cards .tech-card:nth-child(1)::after {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    content: url("./img/tech/Combined\ ShapeBlack.svg");
+    opacity: 0.3;
+    transform: rotate(0.7turn);
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+#tech .tech-cards .tech-card img {
+    background-color: var(--yellow);
+    width: 80px;
+    margin: 24px 0 10px 24px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#tech .tech-cards .tech-card:nth-child(2) img {
+    padding: 6px 11px;
+}
+
+#tech .tech-cards .tech-card h1 {
+    padding-bottom: 0;
+}
+
+@media (min-width: 800px) {
+    #tech {
+        margin: 100px auto;
+        max-width: 1600px;
+    }
+
+    #tech .tech-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tech .tech-text .tech-description {
+        font-size: 24px;
+        max-width: 30vw;
+    }
+
+    #tech .tech-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tech .tech-cards .tech-card:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+/*/////////////////// TECH /////////////////////*/
+
+/*/////////////////// SKILLS /////////////////////*/
+
+#skills {
+    margin: 20px auto;
+    border: 1rem solid var(--primaryColor);
+    border-radius: 50px;
+    background-color: var(--primaryColor);
+}
+
+#skills .skills-top {
+    padding: 1rem;
+    border-radius: 50px;
+    width: 100%;
+    background-color: var(--grey);
+}
+
+#skills .skills-text > * {
+    margin: 3rem 0 2rem 0;
+}
+
+#skills .skills-text h2 {
+    font-size: 22px;
+    font-weight: lighter;
+}
+
+#skills .skills-text h1 {
+    position: relative;
+    font-size: 40px;
+}
+
+#skills .skills-text h1::before {
+    position: absolute;
+    top: -100px;
+    right: 10px;
+    content: url("./img/tech/Combined\ ShapeBlack.svg");
+    opacity: 0.1;
+    z-index: 1;
+}
+
+#skills .skills-top .skills-tech {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills .skills-top .skills-tech .skills-item {
+    background-color: var(--white);
+    padding: 1rem;
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 4px rgba(2, 2, 2, 0.205);
+    width: 260px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#skills .skills-top .skills-tech .skills-item img {
+    width: 220px;
+}
+
+#skills .skills-bottom {
+    background-color: var(--primaryColor);
+}
+
+#skills .skills-bottom .skills-icons {
+    margin-top: 2rem;
+    display: grid;
+}
+
+#skills .skills-bottom .skills-icon > * {
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+#skills .skills-bottom .skills-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#skills .skills-bottom .skills-icon p {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+#skills .skills-bottom .skills-icon img {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: var(--yellow);
+    border-radius: 15px;
+}
+
+#skills .skills-bottom .skills-icon:nth-child(2) img {
+    padding: 1rem 1.5rem;
+}
+
+#skills .skills-bottom .skills-icon:nth-child(4) img {
+    padding: 1.2rem 1rem;
+}
+
+@media (min-width: 800px) {
+    #skills {
+        margin: 0 auto;
+        border-radius: 50px;
+        background-color: var(--primaryColor);
+    }
+
+    #skills .skills-top {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--grey);
+        margin: 0 auto;   
+    }
+
+    #skills .skills-top .skills-text,
+    #skills .skills-top .skills-tech {
+        padding: 100px
+    }
+
+
+    #skills .skills-top .skills-tech {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    #skills .skills-top .skills-tech .skills-item {
+        width: 150px;
+        height: 150px;
+    }
+
+    #skills .skills-top .skills-tech .skills-item img {
+        width: 150px;
+    }
+
+    #skills .skills-bottom .skills-icons {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #skills .skills-top .skills-tech .skills-item {
+        width: 300px;
+        height: 300px;
+    }
+
+    #skills .skills-top .skills-tech .skills-item img {
+        width: 250px;
+    }
+}
+
+
+/*/////////////////// SKILLS /////////////////////*/
+
+/*/////////////////// PORTFOLIO /////////////////////*/
+
+#portfolio {
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+#portfolio .main-project {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    height: 450px;
+    background-color: lime;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#portfolio .main-project .text > * {
+    padding: 1rem;
+}
+
+#portfolio .main-project .text h1 {
+    font-size: 2rem;
+}
+
+#portfolio .projects .categories .slide-label {
+    padding: 1rem;
+}
+
+#slide1:checked ~ .slide-label-1,
+#slide2:checked ~ .slide-label-2,
+#slide3:checked ~ .slide-label-3 {
+    border-bottom: 3px solid var(--primaryColor);
+}
+
+#portfolio .projects .categories input {
+    display: none;
+}
+
+#portfolio .projects .projects-list {
+    margin-top: 2rem;
+}
+
+#portfolio .projects .projects-list .slide {
+    margin: 20px;
+    border-radius: 15px;
+    padding: 1rem;
+    display: none;
+}
+
+
+#portfolio .projects .slide2 {
+    background-color: blue;
+}
+
+#portfolio .projects .slide3 {
+    background: green;
+}
+
+
+#slide1:checked ~ .projects-list .slide1,
+#slide2:checked ~ .projects-list .slide2, 
+#slide3:checked ~ .projects-list .slide3{
+    display: block;
+}
+
+@media (min-width: 800px) {
+    #portfolio {
+        margin: 100px auto;
+        max-width: 1600px;
+    }
+
+    #portfolio .projects .projects-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+/*/////////////////// PORTFOLIO /////////////////////*/
+
+/*/////////////////// TESTIMONIALS //////////////////*/
+
+#testimonials {
+    margin-top: 1rem auto;
+    padding: 1rem;
+}
+
+#testimonials h3,
+#testimonials h1 {
+    margin-bottom: 2rem;
+}
+
+#testimonials h1 {
+    font-size: 60px;
+}
+
+#testimonials h3 {
+    font-size: 40px;
+}
+
+.testimonial-card > * {
+    padding: 1rem;
+}
+
+.testimonial-card {
+    position: relative;
+    background-color: var(--grey);
+    margin-bottom: 1rem;
+    border-radius: 15px;
+}
+
+.testimonial-card:nth-child(1)::before {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    content: url("./img/tech/Combined\ ShapeBlack.svg");
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+.testimonial-cards {
+    margin-top: 2rem;
+}
+
+.testimonial-card img {
+    width: 80px;
+    background-color: var(--yellow);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+.testimonial-card .person {
+    display: flex;
+}
+
+.testimonial-card .person img {
+    margin: 1rem;
+    width: 100px;
+    background-color: transparent;
+}
+
+.testimonial-card .person .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-card .person .name h2 {
+    font-size: 20px;
+}
+
+@media (min-width: 800px) {
+    #testimonials {
+        margin: 100px auto;
+        max-width: 1600px;
+    }
+
+    .testimonial-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .testimonial-card:not(:last-child) {
+        margin-right: 50px;
+    }
+}
+
+/*/////////////////// TESTIMONIALS //////////////////*/
+
+/*///////////////////// STORIES //////////////////////*/
+
+#stories {
+    margin: 1rem auto;
+    background-color: var(--primaryColor);
+    border-radius: 50px 50px 0 0;
+    padding: 1rem;
+}
+
+#stories .stories-text > * {
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+#stories .stories-text .stories-title > * {
+    margin: 1rem 0;
+}
+
+#stories .stories-text .stories-title h2 {
+    margin-top: 2rem;
+    font-weight: lighter;
+}
+
+#stories .stories-text .stories-title h1 {
+    font-size:60px;
+}
+
+#stories .stories-cards .stories-card > * {
+    margin-bottom: 1rem;
+}
+
+#stories .stories-cards .stories-card {
+    position: relative;
+    background-color: var(--white);
+    border: 8px solid var(--white);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+#stories .stories-cards .stories-card:nth-child(1)::after {
+    position: absolute;
+    top: -80px;
+    right: -10px;
+    content: url("./img/hero/Combined\ Shape.svg");
+    opacity: 0.3;
+    z-index: 2;
+}
+
+#stories .stories-cards .stories-card img {
+    width: 100%;
+}
+
+#stories .stories-cards .stories-card h2,
+#stories .stories-cards .stories-card p,
+#stories .stories-cards .stories-card h5 {
+    padding: 0.5rem;
+}
+
+#stories .stories-cards .stories-card h2 {
+    text-transform: capitalize;
+}
+
+
+
+@media (min-width: 800px) {
+    #stories {
+        margin: 100px 0;
+        padding: 100px 170px;
+        max-width: 1900px;
+        border-radius: 100px 100px 0 0;
+    }
+
+    #stories .stories-text {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #stories .stories-text .stories-description p {
+        line-height: 40px;
+        font-size: 24px;
+        width: 30vw;
+    }
+
+    #stories .stories-cards {
+        display: flex;
+        justify-content: space-between;
+        margin: 100px auto;
+    }
+
+    #stories .stories-cards .stories-card:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    #stories .stories-cards .stories-card img {
+        width: 100%;
+    }
+}
+
+
+
+/*///////////////////// STORIES //////////////////////*/
