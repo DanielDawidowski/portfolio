@@ -35,6 +35,10 @@ h2 {
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     line-height: 30px;
 }
@@ -554,7 +558,7 @@ button {
 /*///////////////////// STORIES //////////////////////*/
 
 #stories {
-    margin: 1rem auto;
+    margin: 0 auto;
     background-color: var(--primaryColor);
     border-radius: 50px 50px 0 0;
     padding: 1rem;
@@ -617,7 +621,7 @@ button {
 
 @media (min-width: 800px) {
     #stories {
-        margin: 100px 0;
+        margin: 100px 0 0 0;
         padding: 100px 170px;
         max-width: 1900px;
         border-radius: 100px 100px 0 0;
@@ -652,3 +656,237 @@ button {
 
 
 /*///////////////////// STORIES //////////////////////*/
+
+/*///////////////////// FORM //////////////////////*/
+
+#contact {
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: var(--primaryColor);
+}
+
+#contact .contact-form {
+    background-color: var(--grey);
+    border-radius: 50px;
+    padding: 0.5rem;
+}
+
+#contact .contact-form .left {
+    padding: 2rem;
+}
+
+#contact .contact-form .left .text > *{
+    margin-bottom: 1.5rem;
+}
+
+#contact .contact-form .left .text h2{
+    font-weight: lighter;
+}
+
+#contact .contact-form .left .text h1 {
+    position: relative;
+    font-size: 40px;
+}
+
+#contact .contact-form .left .text h1::after {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    content: url("./img/stories/dots.svg");
+    opacity: 0.8;
+    z-index: 2;
+}
+
+#contact .contact-form .right {
+    margin: 1rem 1.5rem;
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 2px 2px 3px 4px rgba(2, 2, 2, 0.205);
+}
+
+#contact .contact-form .right form > * {
+    margin-bottom: 1.4rem;
+}
+
+#contact .contact-form .right form h2 {
+    padding: 1rem 0;
+    text-transform: unset;
+}
+
+#contact .contact-form .right form input,
+#contact .contact-form .right form textarea {
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    width: 100%;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+::placeholder {
+    padding: 15px;
+    font-family: "Paytone One";
+    letter-spacing: 2px;
+}
+
+#contact .right form button {
+    background-color: var(--primaryColor);
+    font-size: 18px;
+    color: var(--white);
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    #contact {
+        margin: 0 auto;
+    }
+
+    #contact .contact-form {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #contact .contact-form .left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 14rem 5rem;
+        width: 40vw;
+    }
+
+    #contact .contact-form .left .text h1 {
+        font-size: 60px;
+    }
+
+    #contact .contact-form .left .text p {
+        font-size: 25px;
+    }
+
+    #contact .contact-form .right {
+        margin: 8rem 5rem;
+        padding: 4rem;
+        width: 30vw;
+    }
+
+    #contact .contact-form .right h2 {
+        font-size: 30px;
+    }
+}
+
+/*///////////////////// FORM //////////////////////*/
+
+/*///////////////////// SOCIAL //////////////////////*/
+
+#social-media {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: var(--primaryColor);
+}
+
+#social-media .text > * {
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#social-media .text h1 {
+    font-size: 40px;
+}
+
+#social-media .social-media-icons img {
+    padding: 0.8rem;
+    margin: 0.6rem;
+    background-color: var(--yellow);
+    width: 70px;
+    border-radius: 15px;
+}
+
+#social-media .social-media-icons .link-icon {
+    position: relative;
+}
+
+/* #social-media .social-media-icons .link-icon:nth-child(1)::after {
+    content: url("./img/hero/Combined\ Shape.svg");
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    opacity: 0.3;
+    z-index: -1;
+} */
+
+@media (min-width: 800px) {
+    #social-media {
+        margin: 0 auto;
+    }
+
+    #social-media .text h1 {
+        font-size: 50px;
+    }
+
+    #social-media .container {
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+    }
+
+    #social-media .social-media-icons img {
+        padding: 0.8rem;
+        margin: 1rem;
+        width: 100px;
+        border-radius: 15px;
+    }
+}
+
+/*///////////////////// SOCIAL //////////////////////*/
+
+/*///////////////////// FOOTER //////////////////////*/
+
+#footer {
+    background-color: var(--black);
+    margin: 0px auto;
+    padding: 1rem;
+    color: var(--white);
+}
+
+#footer .footer-container > *{
+    padding-bottom: 4rem;
+}
+
+.footer-nav > * {
+    margin-bottom: 1rem
+}
+
+.footer-nav a {
+    color: var(--white);
+}
+
+.footer-contact > * {
+    margin-bottom: 0.4rem
+}
+
+.copyright {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.281);
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+/*///////////////////// FOOTER //////////////////////*/
+
+@media (min-width: 800px) {
+    #footer {
+        margin: 0 auto;    
+    }
+
+    .footer-name {
+        width: 22vw;
+    }
+
+    #footer .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+        margin: 2rem auto; 
+    }
+}
