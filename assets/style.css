@@ -88,9 +88,8 @@ button {
 #hero .hero-text::before {
     position: absolute;
     content: url("./img/hero/Combined\ Shape.svg");
-    right: -2rem;
+    right: 0;
     opacity: 0.4;
-    overflow-x: hidden;
 }
 
 #hero .hero-text h1{
@@ -117,7 +116,8 @@ button {
     }
 
     #hero .hero-text {
-        width: 600px;
+        width: 800px;
+        padding-left: 200px;
     }
     
 }
@@ -300,6 +300,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 
@@ -367,6 +368,10 @@ button {
         margin: 0 auto;
         max-width: 1600px;
     }
+
+    #skills .skills-bottom .skills-icon {
+        width: 12vw;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -399,7 +404,7 @@ button {
     padding: 1rem;
     color: var(--white);
     margin-bottom: 1rem;
-    background: url('./img/portfolio/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850.jpg')  no-repeat;
+    background: url('./img/portfolio/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850-min.jpg')  no-repeat;
 
     background-size: cover;
 }
@@ -415,26 +420,26 @@ button {
 }
 
 #portfolio .projects-list .beds {
-    background: url('./img/portfolio/black-and-grey-bedspread-on-bed-and-pillow-164595.jpg') no-repeat;
+    background: url('./img/portfolio/black-and-grey-bedspread-on-bed-and-pillow-164595-min.jpg') no-repeat;
     background-size: cover;
     
 }
 
 #portfolio .projects-list .bicycle {
     color: var(--white);
-    background: url('./img/portfolio/activity-bicycle-bike-biker-276517.jpg') no-repeat;
+    background: url('./img/portfolio/activity-bicycle-bike-biker-276517-min.jpg') no-repeat;
     background-size: cover;
 }
 
 #portfolio .projects-list  .electronix {
     color: var(--white);
-    background: url('./img/portfolio/consoles.jpg') no-repeat;
+    background: url('./img/portfolio/consoles-min.jpg') no-repeat;
     background-size: cover;
 }
 
 #portfolio .projects-list .active-camps {
     color: var(--white);
-    background: url('./img/portfolio/fire-camp.jpg') no-repeat;
+    background: url('./img/portfolio/fire-camp-min.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -447,7 +452,6 @@ button {
 }
 
 #portfolio .projects .categories .slide-label {
-    font-family: "Paytone One";
     padding: 1rem;
     font-size: 16px;
     font-weight: bolder;

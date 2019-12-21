@@ -18,9 +18,12 @@ header .row {
     border: 0;
 }
 
+header .row .menu-icons a {
+    margin-left: 1rem;
+}
 
 header .row .menu-icons img {
-    width: 25px;
+    width: 30px;
 }
 
 .menu-toggle {
@@ -111,9 +114,12 @@ header .row .menu-icons img {
 
 /* //////////////// navi /////////////////// */
 
+.logo {
+    color: var(--white);
+}
 
 header {
-    height: 60px;
+    height: 61px;
     background-color: var(--primaryColor);
 }
 
@@ -136,6 +142,7 @@ nav a {
 
     header .row{
       display: flex;
+      justify-content: space-around;
     }  
 
     nav {

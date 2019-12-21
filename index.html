@@ -21,11 +21,11 @@
                     <span class="fa fa-close" aria-hidden="true"></span>
                 </a>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#tech">About</a></li>
+                    <li><a href="#skills">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#stories">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a>
@@ -47,7 +47,9 @@
                 <p>Some distant orb has power to raise and purify our thoughts like a strain of sacred music, or a noble picture, or a passage from the grander poets</p>
                 <div class="hero-buttons">
                     <button class="about-btn">About</button>
-                    <button class="download-btn">Download CV</button>
+                    <a href="assets/img/Daniel Dawidowski.pdf" download>
+                        <button class="download-btn">Download CV</button>
+                    </a>
                 </div>
             </div>
         </section> 
@@ -170,7 +172,7 @@
                         <img src="/assets/img/testimonials/test1big.png" alt="">
                         <div class="name">
                             <h2>Nout Goldstein</h2>
-                            <h5>Apple Manager</h5>
+
                         </div>
                     </div>
                 </div>
@@ -181,7 +183,7 @@
                         <img src="/assets/img/testimonials/testi2big.png" alt="">
                         <div class="name">
                             <h2>Kevin Noboa</h2>
-                            <h5>Google Manager</h5>
+
                         </div>
                     </div>
                 </div>
@@ -228,12 +230,13 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form>
+                    <form action="https://formspree.io/dvds1987@gmail.com"
+                    method="POST">
                         <h2>Want a </br> collaboration?</h2>
                         <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" name="_replyto">
                         <textarea name="Message" placeholder="Message" cols="30" rows="10"></textarea>
-                        <button>Submit</button>
+                        <button type="submit" value="Send">Submit</button>
                     </form>
                 </div>
             </div>    
