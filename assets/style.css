@@ -74,6 +74,7 @@ button {
     display: flex;
     align-items: flex-start;
     border-radius: 0 0 100px 100px;
+    height: 100vh;
 }
 
 #hero .hero-text > * {
@@ -88,7 +89,7 @@ button {
 #hero .hero-text::before {
     position: absolute;
     content: url("./img/hero/Combined\ Shape.svg");
-    right: 0;
+    right: 50px;
     opacity: 0.4;
 }
 
@@ -113,6 +114,9 @@ button {
         justify-content: flex-start;
         align-items: center;
         padding: 3rem;
+        background: url("./img/hero/Bitmap@2x.png") no-repeat;
+        background-size: cover;
+        background-position: 25% 50%;
     }
 
     #hero .hero-text {
@@ -166,8 +170,7 @@ button {
     position: absolute;
     top: -40px;
     right: 30px;
-    content: url("./img/tech/Combined\ ShapeBlack.svg");
-    opacity: 0.3;
+    content: url("./img/stories/dots.svg");
     transform: rotate(0.7turn);
     z-index: -1;
     overflow-x: hidden;
@@ -404,7 +407,7 @@ button {
     padding: 1rem;
     color: var(--white);
     margin-bottom: 1rem;
-    background: url('./img/portfolio/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850-min.jpg')  no-repeat;
+    background: url('./img/portfolio/close-up-photo-of-assorted-color-of-push-pins-on-map-1078850-min.jpg') no-repeat;
 
     background-size: cover;
 }
