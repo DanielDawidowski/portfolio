@@ -5,6 +5,11 @@ header .row {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 1rem;
+    position: fixed;
+    width: 100%;
+    background: var(--primaryColor);
+    z-index: 9999;
+    border-radius: 0 0 15px 15px;
 }
 
 .sr-only {
@@ -70,6 +75,10 @@ header .row .menu-icons img {
     border-top: 1px solid #383838;
 }
 
+.main-menu li {
+    text-align: center;
+}
+
 .main-menu a:hover,
 .main-menu a:focus {
     background: #333;
@@ -80,6 +89,7 @@ header .row .menu-icons img {
     position: absolute;
     right: 0;
     top: 0;
+    color: var(--primaryColor);
 }
 
 .main-menu:target {
@@ -105,17 +115,27 @@ header .row .menu-icons img {
     width: 100%;
     height: 100%;
     z-index: 998;
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(61, 3, 155, 0.842);
     cursor: default;
 }
 
-
+.main-menu ul img {
+    background-color: var(--primaryColor);
+    border-radius: 15px;
+    width: 100px;
+    margin-left: 3rem;
+    display: block;
+}
 
 
 /* //////////////// navi /////////////////// */
 
 .logo {
-    color: var(--white);
+    color: var(--white);   
+}
+
+.logo img {
+   width: 40px;
 }
 
 header {
@@ -143,6 +163,7 @@ nav a {
     header .row{
       display: flex;
       justify-content: space-around;
+      border-radius: 0 0 50px 50px;
     }  
 
     nav {
@@ -203,6 +224,10 @@ nav a {
       color: #C85028;
       border-bottom: none;
       display: inline;
+    }
+
+    .main-menu ul img {
+        display: none;
     }
 
   }

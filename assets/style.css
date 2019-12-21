@@ -108,7 +108,7 @@ button {
     margin-right: 20px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (orientation: landscape){
     #hero  {
         display: flex;
         justify-content: flex-start;
@@ -924,6 +924,12 @@ button {
     margin: 0px auto;
     padding: 1rem;
     color: var(--white);
+}
+
+#footer .footer-name img {
+    background: var(--primaryColor);
+    width: 120px;
+    border-radius: 15px;
 }
 
 #footer .footer-container > *{
