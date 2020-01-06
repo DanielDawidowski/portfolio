@@ -216,7 +216,7 @@ button {
     top: -40px;
     right: 30px;
     content: url("./img/stories/dots.svg");
-    transform: rotate(0.7turn);
+    transform: rotate(65deg);
     z-index: -1;
     overflow-x: hidden;
 }
@@ -474,20 +474,22 @@ button {
 }
 
 #portfolio .projects-list .bicycle {
-    color: var(--white);
     background: url('./img/portfolio/activity-bicycle-bike-biker-276517-min.jpg') no-repeat;
     background-size: cover;
 }
 
 #portfolio .projects-list  .electronix {
-    color: var(--white);
     background: url('./img/portfolio/consoles-min.jpg') no-repeat;
     background-size: cover;
 }
 
 #portfolio .projects-list .active-camps {
-    color: var(--white);
     background: url('./img/portfolio/fire-camp-min.jpg') no-repeat;
+    background-size: cover;
+}
+
+#portfolio .projects-list .restaurant{
+    background: url('./img/portfolio/restaurant.png') no-repeat;
     background-size: cover;
 }
 
